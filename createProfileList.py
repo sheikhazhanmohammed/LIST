@@ -1,7 +1,7 @@
 """
 Created by: Azhan Mohammed
 Email: azhanmohammed1999@gmail.com
-Description: Given a certain search patter url, the script goes page wise and extracts the profile urls and stores them in a txt file.
+Description: Given a certain search pattern url, the script goes page wise and extracts the profile urls and stores them in a txt file.
 """
 
 from selenium import webdriver
