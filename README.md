@@ -1,5 +1,7 @@
 # LIST: LinkedIn Scrapping Tool
 
+
+
 ### Prerequisites
 
 - Python 3.x
@@ -18,14 +20,14 @@ python3 createProfileList.py --searchPatternURL "https://www.linkedin.com/search
 
 This script extracts LinkedIn profile URLs from search results pages based on a given search pattern URL and stores them in a txt file.
 
-# PROFILE SKILL SCRAPER
+## PROFILE SKILL SCRAPER
 
 How to run the script (sample command):
 
 ```bash
-python3 scrapProfiles.py --txtfile "path/to/profile_urls.txt" --outputFolder "path/to/output/folder" --startIndex 0 --endIndex -1
+python3 scrapProfiles.py --txtfile "path/to/profile_urls.txt" --startIndex 0 --endIndex -1
 ```
 
 This script scrapes the skill information from LinkedIn profiles based on a given txt file containing the profile URLs and stores the scraped data in JSON files within a specified output folder.
 
-Note: The `startIndex` and `endIndex` parameters are used to specify the range of profile URLs to scrape from the provided txt file. Setting `startIndex` to 0 and `endIndex` to -1 will scrape all profiles in the file.
+Note: The `startIndex` and `endIndex` parameters are used to specify the range of profile URLs to scrape from the provided txt file. Setting `startIndex` to 0 and `endIndex` to -1 will scrape all profiles in the file. Add the arguments `extractExperience` with True/False to extract current workplace details, and  `extractSkill` with True/False to extract skill respectively.
